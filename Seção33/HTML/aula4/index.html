@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>;Meu HTML</title>
+
+    <style>
+        h1 {
+            background: red;
+        }
+
+        p{
+            background: blue;
+        }
+
+        .fundo-vermelho {
+            background: brown;
+        }
+
+        .bold {
+            color: yellow;
+        }
+    </style>
+    <!--Style é CSS, se você fazer alterções na mesma tag a que prevalece é a última
+    Para se referir ao id no style precisa de um # antes
+    Prefria modificar os estilos nas classes, pois o nivel de importancia dos ids sao grande-->
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda"> <!--Atributo de id não podem ser iguais-->
+        Vai vir aqui
+    </h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho"> <!--Classes podem ser repetidas e se for na mesma tag é só separar por espaço-->
+        Vai vir aqui
+    </h1>
+    <p>Um texto <b class="bold">qualquer</b></p> <!--<b></b> deixa em negrito-->
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+    <p>Um texto <b class="bold">qualquer</b></p>
+</body>
+</html>

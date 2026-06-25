@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img-in-text {
+            width: 50px;
+            height: 44px;
+        }
+
+        .vermelho {
+            font-size: 24px;
+            color: red;
+        }
+
+        .destaque {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cabeçalho</h1>
+
+    <ul style="
+    list-style: none;
+    margin: 0;
+    padding: 0;">
+        <li><a href="#">Página inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+
+    <ol>
+        <li>Milk</li>
+        <li>Cheese
+            <ol>
+                <li>Blue cheese</li>
+                <li>Feta</li>
+            </ol>
+        </li>
+    </ol>
+
+    <p><b>Lorem</b> <strong>ipsum</strong>  <i>dolor</i> <em>aammooooo</em>
+        
+    <a href="https://music.youtube.com/watch?v=RicByepWCsQ&list=OLAK5uy_lL6bP3tsOcU9Tu3zCG61my265UG4wH5wU" target="_blank">amet</a>
+    <a href="https://music.youtube.com/watch?v=RicByepWCsQ&list=OLAK5uy_lL6bP3tsOcU9Tu3zCG61my265UG4wH5wU" target="_blank"><img class="img-in-text" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg" alt="Brasão do Brasil"></a>
+
+    <del>vermelho</del> <ins>azul</ins>, <s>adipisicing</s> <u>elit</u>. Quidem, <small>sint</small> beatae maxime 2^<sup>2</sup>, H<sub>2</sub>O quasi ratione soluta sequi inventore alias eos, aliquam, saepe quas. Reprehenderit praesentium accusantium ea tenetur, at provident minus.</p>
+
+    <hr>
+
+    <p><span style="color: red;">Lorem</span> OU <span class="vermelho">ipsum</span> dolor sit amet consectetur <code>console.log</code> adipisicing elit.<br><q cite="https://www.youtube.com/watch?v=D0KMxRMfwxE&t=608s">BR
+Ruído Marrom <span class="vermelho">para Estudar e melhorar</span> a Concentração</q>, sint beatae maxime quasi ratione soluta sequi inventore alias eos, aliquam, saepe quas. Reprehenderit praesentium accusantium ea tenetur, at provident minus.</p>
+    <blockquote cite="https://www.youtube.com/watch?v=D0KMxRMfwxE&t=608s"><p>Aqui sim eu estou fazendo um bloco de citação</p></blockquote> 
+    
+    <pre><code>>let soma = 0;
+
+inputsMais.forEach((input) => {
+    const valor = input.value;
+    const numero = Number(valor);
+
+    if (numero) {
+        soma += numero;
+    }
+
+    console.log(soma);
+});</code></pre>
+
+<div class="vermelho">Eu sou um bloco</div>
+
+<p>
+    Este é um texto com um palavra em <span class="destaque">vermelho</span>
+</p>
+</body>
+</html>
+<!--Tag inline ocupa apenas o espaço necessário
+a tag <b></b> significa bold foi feita para deixar em negrito
+<strong></strong> deixa em negrito, ela é semântica (cria um elemento que tem lógica), feita pra deixar a palavra mais forte]
+<i></i> ítalico
+<em></em> para dar ênfase mas também deixa o texto em ítalico
+<a></a> conecta a palavra para outra página da internet
+href="" entre as aspas é onde você coloca o link
+target="_blank" para abrir o link em uma nova aba
+a tag <img src=" alt="> é para linkar uma imagem, src fala onde que tá a imagem, alt significa o texto alternativo da imagem, width="50" e height="44" diz o tamanho em pixels da imagem
+tem como usar style direto na tag
+<del></del> risca a palavra são semânticas <s></s> também mas física
+<ins></ins> sublinha a palavra são semânticas <u></u> também mas física
+<small></small> Deixa a letra pequena
+<sup></sup> eleva a palavra ou número
+<sub></sub> deixa a palavra menor
+<br> quebra a linha
+<q></q> deixa o texto entre aspas, citação
+cite="" fala de onde você ta citando
+<blockquote></blockquote> bloco de citação, fora do p, pq não é inline, mas dentro dele pode ter um paragrafo
+<hr> é um quebra linha com uma linha horizontal
+<code></code> avisa que é um comando de código da TI, fora do p
+<pre></pre> é uma tag de texto pré formatado, que formata o código, até os espaços
+span é um conteiner genérico inline
+conteiner genérico
+font-size é o tamanho da fonte
+<div></div> é um bloco de codigo
+listas:
+    <ul>
+        <li></li>
+    </ul> é uma lista não ordenada, os itens tem que estar dentro do <li></li>
+    <ol></ol> é uma lista ordenada, os itens tem que estar dentro do <li></li>
+Dentro do style:
+    margin: 0; para deixar a margem 0
+    padding: 0; significa enchimento, para deixar ele no 0
+-->
