@@ -10,28 +10,41 @@
             margin: 0;
             padding: 0;
         }
-
-        #NETFLIX {
-            float: left; 
-            color: red; 
-            padding: 15px; 
+        body {
+            background-image: url(https://i.pinimg.com/1200x/ca/6a/01/ca6a010ae8b2845f4704c632717f9a10.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+        #heading {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        #heading .h1 {
+            padding: 15px 0;
             font-size: 20px;
             text-transform: uppercase;
         }
-
-        #PORTUGUES {
-            padding-top: 15px; 
-            float: left; 
-            color: white; 
-            background: grey;
-            display: flex;
+        #heading a {
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
         }
     </Style>
 <body>
     <header id="heading">
-        <h1>
-            <a href="#">Netflix</a>
-        </h1>
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+            <h2 class="h1">
+                <a href="#">Netflix</a>
+            </h2>   
+        </div>
     </header>
 </body>
 </html>
@@ -44,7 +57,12 @@
     </Style>
     * significa todos
 
-    font-size: 20px; aumenta a fonte
-    padding: 15px 0 0 50px; vai no sentido horário, cima, direita, baixo, esquerda
-    converte todas as letras de um texto para maiúsculas na tela
+font-size: 20px; aumenta a fonte
+padding: 15px 0 0 50px; vai no sentido horário, cima, direita, baixo, esquerda
+text-transform: uppercase converte todas as letras de um texto para maiúsculas na tela
+padding-top: faz um enchimento, entao ele leva a cor toda
+margin-top: da o espaço de margem no topo
+width: 80%; 80% da tela
+background-size: cover; faz a imagem cobrir toda a area dispinovel, nao deixa espaço vazio
+background-position: top center; alinha a imagem no topo e centralizada horizontalmente 
 -->
