@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .section-one, .section-two {
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
         .section-one {
@@ -14,12 +16,13 @@
             background-size: cover;
             background-position: center center;
             color: #fff;
-            width: 200px;
-            height: 50px;
+            width: 300px;
+            height: 150px;
             padding: 10px; 
             margin: 20px;
-            border: 10px solid;
+            border: 10px;
             border-style: solid;
+            border-bottom-width: 20px;
             border-bottom-color: #b22222;
             border-top-color: #ffff00;
             border-right-color: #008000;
@@ -44,4 +47,11 @@
 A margem é transparente, só serve pra empurrar
 para as alterações da border aparecer, voce precisa mexer na largura, o estilo dela e na cor
 box-sizing: border-box; deixa do tamanho que voce declarou a altura e largura
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+border-bottom-width: 20px; Você precisa usar a palavra width pq ela diz que você quer alterar apenas o tamanho daquela borda, sem mexer na cor ou no estilo. se você não fazer isso, e nao colocar o width, voce precisa declarar o estilo e a cor de novo para a bordar aparecer
+background-image: url(LINK); voce coloca a imagem do link como fundo
 -->
