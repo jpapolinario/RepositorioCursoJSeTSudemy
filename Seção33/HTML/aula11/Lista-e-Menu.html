@@ -18,16 +18,20 @@
             padding: 0;
         }
         nav {
-            background: rgba(0, 0, 0, 0.5);
-            height: 50px;
+            background: red;
         }
         nav a {
             color: white;
             text-decoration: none;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background: red;
-            padding: 10px 0;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+
         } 
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
         nav {
             display: flex;
             align-items: center;
@@ -62,7 +66,7 @@
         <dt>Café</dt>
         <dd>bebida preta quente</dd>
     </dl>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos fuga omnis cupiditate distinctio laudantium dicta sint maxime consequatur eius tenetur nostrum cum, <a href="#"> optio</a> nesciunt, inventore maiores sed fugit consequuntur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos fuga omnis cupiditate distinctio laudantium dicta sint maxime consequatur eius tenetur nostrum cum, <a href="#" style="padding: 20px 0; background: red; display: block;"> optio</a> nesciunt, inventore maiores sed fugit consequuntur.</p>
 </body>
 </html>
 <!--
@@ -75,7 +79,7 @@ css é o estilo do que vai existir na pagina
     <li></li>
 </ol>
 type="1" start="20" fala de qual forma a lista vai ser ordenada e por qual número vai começar
-<dl> description lists lista de termos com a descrição de cada um desses termos
+<dl> description lists lista de termos com a descrição de cada um desses termos, voce passa um termo, uma descrição
     <dt>Café</dt> termo
     <dd>bebida preta quente</dd> descrição
 </dl>
@@ -86,5 +90,6 @@ list-style: none tirou as bolinhas
 flex-direction: column; ordem de coluna
 flex-direction: column-reverse; ordem de coluna inversa
 align-items: center; alinha os itens no centro
-
+display: block; transforma o texto em bloco, ocupando mais espaço, podendo alterar as bordas etc
+a:hover quando passa em cima de um elemento
 -->
