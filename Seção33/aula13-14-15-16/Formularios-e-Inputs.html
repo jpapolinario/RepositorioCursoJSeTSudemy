@@ -8,37 +8,78 @@
         body {
             font-family: sans-serif;
         }
+        label {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off">
     <p>O meu formulário</p>
     <p>
-        <input type="text" id="nome" name="nomes">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="NOME" placeholder="Seu nome">
+    </p>
+    <p>
+        <label for="dev1">Sou um dev</label>
+        <input type="checkbox" id="dev1" name="DEV1" value="sim">
+        <label for="dev2"><br>Sou um dev</label>
+        <input type="checkbox" id="dev2" name="DEV2" value="sim">
+        <label for="dev3"><br>Sou um dev</label>
+        <input type="checkbox" id="dev3" name="DEV3" value="sim">
+    </p>
+    <p>
+        Gênero:<br>
+        <label for="feminino">feminino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="masculino"><br>masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="outro_outra"><br>Outro ou outra</label>
+        <input type="radio" id="outro_outra" name="genero" value="outro_outra">
+    </p>
+    <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
     </p>
     </form>
-    <p>(oi) tudo (bem) com (voces) </p>
 </body>
 </html>
 <!--
 Parte 1
 <form></form> é um bloco de conteudo
-action="" pra onde que eu vou mandar esse formulario
-target="_blank" abrir a pagina em outra janela
-autocomplete="off" nao ficar falando coisas que voce ja digitou no formulario
-method="get" fala que os dados preenchidos serao anexados na URL
+action="" para onde que eu vou mandar esse formulário
+method="get" fala que os dados preenchidos serão anexados na URL
+target="_blank" abrir a página em outra janela
+autocomplete="off" não vai ficar falando coisas que você já digitou no formulário
 <fieldset> cria uma borda para agrupar campos
-<legend> defini um titulo ou legenda para o fieldset
+<legend> define um título ou legenda para o fieldset
+
 Parte 2
-    <p>
-        <input type="text"> criou um espaço que aceita texto que o usuario pode escrever
-    </p>
+<p>
+    <input type="text" id="nome" name="nome"> criou um espaço que aceita texto que o usuario pode escrever
+</p>
+o name vai pro servidor
+placeholder="Seu nome" é um atributo no input que aparece quase transparente, usado para sugerir o que você deve escrever
+value="Luiz Otávio" tem como deixar um valor pré existente
+<label></label> rotulo do input
+cursor: pointer; deixa clicável
+<label>
+    Nome:
+    <input type="text" id="nome" name="Nome" placeholder="Seu nome"> o type fala o tipo do que vai ser escrito
+</label> tem como deixar o label englobando o input, que ai você não precisa usar o for, se não englobar, é só usar o for com o id do input
+disabled input desabilitado
+readonly tem como interagir mas não tem como escrever
+checked deixa checado
+required faz o campo ser obrigatório
+<label for="nome">Nome:</label> fala para quem ele esta se direcionando usando uma id
+type="checkbox" é uma caixa que pode ser marcada varias  vezes
+type="radio" com os mesmos name é um circulo que só pode ter um marcado
+
+existem tres tipos de botão
+<button type="submit"> envia o dado
+<button type="reset"> Reseta o valor
 Parte 3
 
 Parte 4
 
-Testando GIT LENS
-Testando GIT LENS denovo 
-Testando GIT LENS denovo ovo
-Testando GIT LENS denovo ovo ovo
 -->
