@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            
+        }
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        tfoot td, table th{
+            background: #ddd;
+        }
+        tfoot td {
+            font-style: italic;
+        }
+        .responsive-table {
+            max-width: 100%;
+
+        }
+        .div-de-fora{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit.</p>
+    <div class="responsive-table">
+        <table>
+            <caption>Uma descrição para tabela</caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1Corpo 1Corpo 1Corpo 1Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td  colspan="2">AQUI</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>TOTAL:</td>
+                </tr>
+                <tr>
+                    <td>R$555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="div-de-fora" style="background-color: aqua; width: 800px;">
+        <h1 class="h1">
+            <a href="#">width de 800px</a>
+        </h1>
+        <h2 class="h1">
+            <a href="#">FIM DA DIV</a>
+        </h2>   
+    </div>
+</body>
+</html>
+<!--
+Para criar a tabela, voce precisa usar o table
+Dentro do table, para criar o titulo da tabela voce usa thead
+dentro do thead, voce usa o tr para as linhas
+dentro do tr, voce usa o th para escrever o titulo
+Dentro do table, para criar o corpo da tabela voce usa tbody
+dentro do tbody, voce usa tr para as linhas
+dentro do tr, voce usa o td para escrever o corpo da tabela
+tr - table row - linha da tabela
+th - table head - cabeça da tabela, titulo
+tbody - table body - corpo da tabela
+td - table data - dado da tabela
+<table> tabela
+    <thead> 
+        <tr>
+            <th></th> colunas, titulo da tabela
+        </tr> linha, horizontal
+    </thead> cabeçalho da tabela
+</table>
+border-collapse: collapse; une as bordas
+<caption></caption> é a descrição da tabela
+tfoot rodapé da tabela
+font-family: sans-serif; fonte usada para as letras
+font-style: ; dá um estilo pra ela, exemplo italico
+caption-side: top; lugar que a caption vai ficar (em cima, em baixo, direita esquerda)
+text-align: left; alinhamento do texto, fala se ele vai ficar centralizado, mais pra esquerda etc
+font-size: 20px; tamanho das letras
+span é um conteiner genérico inline
+colspan="2" faz a celula ocupar duas colunas, horizontal, col é de coluna
+rowspan="2" ocupa duas linhas
+quando um bloco for grande demais para uma tela, tem commo voce arrastar somente esse bloco para o lado
+tem que ser uma div, só fazer
+max-width: 100%;
+overflow-x: auto; quando passa o tamanho do elemento em x (plano cartesiano)
+-->
