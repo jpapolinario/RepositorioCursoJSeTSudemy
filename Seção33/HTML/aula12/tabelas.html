@@ -10,7 +10,7 @@
         }
         table {
             border-collapse: collapse;
-            
+            width: 800px;
         }
         table td, table th {
             border: 1px solid #ccc;
@@ -32,10 +32,7 @@
         }
         .responsive-table {
             max-width: 100%;
-
-        }
-        .div-de-fora{
-            justify-content: space-between;
+            overflow-x: auto;            
         }
     </style>
 </head>
@@ -78,14 +75,6 @@
             </tfoot>
         </table>
     </div>
-    <div class="div-de-fora" style="background-color: aqua; width: 800px;">
-        <h1 class="h1">
-            <a href="#">width de 800px</a>
-        </h1>
-        <h2 class="h1">
-            <a href="#">FIM DA DIV</a>
-        </h2>   
-    </div>
 </body>
 </html>
 <!--
@@ -121,5 +110,5 @@ rowspan="2" ocupa duas linhas
 quando um bloco for grande demais para uma tela, tem commo voce arrastar somente esse bloco para o lado
 tem que ser uma div, só fazer
 max-width: 100%;
-overflow-x: auto; quando passa o tamanho do elemento em x (plano cartesiano)
+overflow-x: auto; quando passa o tamanho do elemento em x (plano cartesiano), para passar a referencia do with nao pode ser porcentagem, na porcentagem o tamanho do background fica variando, quando voce da uma width fixa e coloca o overflow, quando for necessario terá a opção de rolagem de tela da parte que precisa e nao da tela inteira
 -->
