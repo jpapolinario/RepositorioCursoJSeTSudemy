@@ -29,13 +29,89 @@
         <input type="checkbox" id="dev3" name="DEV3" value="sim">
     </p>
     <p>
-        Gênero:<br>
+        <div style=" margin-bottom: 8px; height: 20px; width: 60px; background: black; display: flex;">
+            <div style="height: 20px; width: 30px; background: deeppink;">Gên</div>
+            <div style="height: 20px; width: 30px; background: deepskyblue;">ero:</div>
+        </div>
         <label for="feminino">feminino</label>
         <input type="radio" id="feminino" name="genero" value="feminino">
         <label for="masculino"><br>masculino</label>
-        <input type="radio" id="masculino" name="genero" value="masculino">
+        <input type="radio" id="masculino" name="genero" value="masculino" checked>
         <label for="outro_outra"><br>Outro ou outra</label>
         <input type="radio" id="outro_outra" name="genero" value="outro_outra">
+    </p>
+    <p>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="DATE" value="2020-04-20">
+    </p>
+    <p>
+        <label for="datetime-local">Datetime-local:</label>
+        <input type="datetime-local" id="datetime-local" name="DATETIME-LOCAL" value="2020-04-20T20:00">
+    </p>
+    <p>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="TIME" value="20:00:01">
+    </p>
+    <p>
+        <label for="cor">Cor preferida:</label>
+        <input type="color" id="cor" name="COR" value="#009933">
+    </p>
+    <p>
+        <label for="e-mail">Seu e-mail:</label>
+        <input type="e-mail" id="e-mail" name="E-MAIL" placeholder="ex.: email@email.com">
+    </p>
+    <p>
+        <label for="file">Sua foto:</label>
+        <input type="file" id="file" name="FILE" accept=".png, .svg, image/*" multiple>
+    </p>
+    <p>
+        <label for="number">Number:</label>
+        <input style="width: 120px;" type="number" id="number" name="NUMBER" placeholder="Digite um número" min="10" max="50" step="5">
+    </p>
+    <p>
+        <label for="password">Seu senha:</label>
+        <input type="password" id="password" name="PASSWORD" placeholder="Digite sua senha">
+    </p>
+    <p>
+        <label for="range">range:</label>
+        <input type="range" id="range" name="RANGE" list="delimitacao">
+        
+        <datalist id="delimitacao">
+            <option value="0" label="0%">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50" label="50%">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100" label="100%">
+        </datalist>
+    </p>
+    <p>
+        <label for="url">Sua URL:</label>
+        <input type="url" id="url" name="URL" placeholder="URL">
+    </p>
+    <p>
+        <label for="search">Sua search:</label>
+        <input type="search" id="search" name="SEARCH" placeholder="search">
+    </p>
+    <p>
+        <label for="select">Selecione alguma opção: </label>
+        <select id="select" name="SELECT">
+            <optgroup label="Teste">
+            <option value="qualquer 1" label="Label 1"></option>
+            <option value="qualquer 2" label="Label 2" disabled></option>
+            <option value="qualquer 3" label="Label 3" selected></option>
+            <option value="qualquer 4" label="Label 4"></option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="textarea">textarea:</label>
+        <textarea id="textarea" name="TEXTAREA" rows="3" cols="5">Mas se colocarmos</textarea>
     </p>
     <p>
         <button type="reset">Reset</button>
@@ -78,8 +154,39 @@ type="radio" com os mesmos name é um circulo que só pode ter um marcado
 existem tres tipos de botão
 <button type="submit"> envia o dado
 <button type="reset"> Reseta o valor
+
 Parte 3
+type="date" para conseguir escolher uma data no input, value="2020-04-20" tem como pré estabelecer um valor do date
+type="datetime" em alguns casos fica como se fosse texto, significa que o navegador não suporta este tipo
+type="datetime-local" possui horas também, value="2020-04-20T20:00"
+type="time" mostra as horas, value="20:00" pré valor, e se quiser tem como colocar os segundos usando :00
+type="color" para escolher uma cor, value="#FF0000" tem como pré estabelecer a cor
+type="email" serve para colocar email
+type="file" para colocar um arquivo, accept=".png, .svg" você consegue especificar o tipo de arquivo se quiser colocar mais de 1 é só colocar uma virgula, multiple pode escolher mais de um arquivo
+type="number" para colocar um número, tem como colocar numero maximo e numero minimo: min="10" max="50" step="5" fala de quanto em quanto vai pular
 
 Parte 4
+type="password" para senhas, ao escrever a senha ela não é visível na tela
+type="range" é possivel delimitar limites min="0" max="10" step="2"
+type="url feito para colocar link
+type="search" feito para procurar uma palavra
+
+Formas de usar select
+<p>
+    <label for="select">Selecione alguma opção: </label>
+    <select id="select" name="SELECT">
+        <option value="qualquer">Valor</option>
+    </select>
+</p>
+ou
+<p>
+    <label for="select">Selecione alguma opção: </label>
+    <select id="select" name="SELECT">
+        <option value="qualquer" label="Valor"></option>
+    </select>
+</p>
+selected deixa a opçao ja selecionada
+<optgroup></optgroup> cria um grupo de opções
+<textarea> é tipo um input mas tem sua propria tag, rows="3" cols="5" tem como falar a quantidade de linhas e colunas, as colunas na verdade são tipo os caracteres
 
 -->
