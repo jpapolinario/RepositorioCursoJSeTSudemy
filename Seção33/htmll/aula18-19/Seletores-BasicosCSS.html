@@ -6,8 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/aula18.css">
 </head>
-<body>
-    <h1 ></h1>
+<body class="error">
+    <div class="pai">
+        Pai
+        <div class="filha outra qualquer">
+            Filha 1
+
+            <div class="filha outra qualquer">
+                Filha da Filha
+            </div>
+        </div>
+
+        <div class="filha outra qualquer">
+            Filha 2
+
+            <div class="filha outra qualquer">
+                Filha da Filha
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <!--
@@ -20,6 +37,14 @@ body div section p,
 body div section h1 {
     color: red;
 } se chama seletores descendentes quando voce vai especificando onde esta o que voce quer mexer, ao colocar virgula voce fala que alem do que esta mexendo tem outra coisa tambem, por padrao ele pula uma linha para ficar um embaixo do outro
+h2.heading quando for falar no style sobre uma tag e uma classe juntas, precisam estar sem espaços 
+div {
+    color: inherit;
+    color: initial;
+} inherit diz que a color das filhas serao herdadas do pai, initial diz que a color das filhas serao as iniciais
+.pai > .filha {
+    color: red;
+} selecionando a filha direta do pai child selector
 
 -->
 <!--
