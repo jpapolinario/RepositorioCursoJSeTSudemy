@@ -4,37 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Baby</title>
+    <style>
+        label, button, select {
+            cursor: pointer;
+        }
+        .idiomas {
+            border: 1px solid white;
+            margin-top: 17px;
+            margin-right: 12px; 
+            float: left; 
+            color: white; 
+            background: rgb(52, 52, 52);
+            font-size: 18px;
+        }
+        .entrar {
+            float: left; 
+            color: white; 
+            background: red; 
+            margin-top: 17px;
+            font-size: 18px;
+        }
+        .email {
+            border: 1px solid white;
+            height: 60px; 
+            width: 350px; 
+            background: rgb(43, 41, 41);
+            float: left; 
+            color: rgb(149, 149, 149);
+        }
+        .Vamos-la {
+            height: 65px; 
+            width: 170px; 
+            background: red; 
+            float: left;
+            color: white;
+            
+        }
+    </style>
 </head>
-
 <body>
+    <div id="Fundo" style="height: 800px; background: deeppink;">
+        <div id="Topo" style="height: 50px; background: deeppink;">
+            <div style="margin-right: 71%; float: left; color: red; margin-top: 17px; margin-left: 18px; font-size: 25px;">NETFLIX</div>
+            
+            
+            <form action="#" method="get" target="_blank" autocomplete="off">
+                <select id="idiomas" name="IDIOMAS" class="idiomas">
+                    <option value="Português" label="Português"></option>
+                    <option value="Inglês" label="English"></option>
+                    <option value="Espanhol" label="Español"></option>
+                </select>
+                
+                <p>
+                    <button type="submit" class="entrar">Entrar</button>
+                </p>
+            </form>
 
-    <div id="Fundo" style="height: 800px; background: black;">
-        <div id="Topo" style="height: 50px; background: black;">
-            <div style="float: left; color: red;">NETFLIX</div>
-            <div style="color: black; float: left;">........................................................................................................................</div>
-            <div style="float: left; color: white; background: grey"># Portugês ^</div>
-            <div style="color: black; float: left;">......</div>
-            <div style="float: left; color: white; background: red;">Entrar</div>
+
+
         </div>
-        <div style="height: 750px; width: 160px; background: black; float: left;"></div>
-        <div id="Meio" style="height: 750px; width: 530px; background: black; float: left;">
-            <div style="height: 120px; width: 530px; background: black; float: left;"></div>
+        <div style="height: 750px; width: 160px; background: deeppink; float: left;"></div>
+        <div id="Meio" style="height: 750px; width: 530px; background: deeppink; float: left;">
+            <div style="height: 120px; width: 530px; background: deeppink; float: left;"></div>
             <h1 style="color: white;">Filmes, séries e muito mais,</h1>
-            <div style="height: 50px; width: 123px; background: black; float: left;"></div>
+            <div style="height: 50px; width: 123px; background: deeppink; float: left;"></div>
             <h1 style="color: white;">sem limites</h1>
-            <div style="height: 25px; width: 45px; background: black; float: left;"></div>
+            <div style="height: 25px; width: 45px; background: deeppink; float: left;"></div>
             <h4 style="color: white;">A partir de R$ 20,90. Cancele quando quiser.</h4>
             <h3 style="color: white;">Quer assistir? Informe seu email para criar ou reiniciar sua</h3>
-            <div style="height: 25px; width: 190px; background: black; float: left;"></div>
+            <div style="height: 25px; width: 190px; background: deeppink; float: left;"></div>
             <h3 style="color: white;">assinatura</h3>
-            <div style="height: 120px; width: 530px; background: black; float: left;">
-                <div style="height: 35px; width: 530px; background: black; float: left;"></div>
-                <div style="height: 60px; width: 360px; background: rgb(43, 41, 41); float: left; color: rgb(149, 149, 149);"><h3>Email</h3></div>
-                <div style="height: 60px; width: 170px; background: red; float: left;"><h2 style="color: white;">Vamos lá ></h2></div>
+            <div style="height: 240px; width: 530px; background: deeppink; float: left;">
+                <div style="height: 35px; width: 530px; background: deeppink; float: left;"></div>
+                <form action="#" method="get" target="_blank" autocomplete="off">
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="EMAIL" placeholder="Email" class="email">
+                    </p>
+                    <p>
+                        <button type="submit" class="Vamos-la">Vamos lá ></button>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
-
 </body>
 </html>
 <!--
