@@ -1,0 +1,12 @@
+.heading {
+    transition: all 300ms ease-in-out
+}
+.heading:hover {
+    background: red;
+}
+a {
+    color: darkorange;
+}
+a:link {
+    color: deeppink;
+}

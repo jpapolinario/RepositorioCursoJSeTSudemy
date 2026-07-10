@@ -1,33 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <input type="checkbox" checked>
+    <input type="checkbox">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/aula18.css">
 </head>
-<body class="error">
-    <div class="pai">
-        Pai
-        <div class="filha outra qualquer">
-            Filha 1
-
-            <div class="filha outra qualquer">
-                Filha da Filha
-            </div>
-        </div>
-
-        <div class="filha outra qualquer">
-            Filha 2
-
-            <div class="filha outra qualquer">
-                Filha da Filha
-            </div>
-        </div>
-    </div>
+<body>
+    <h1 class="heading" meu-atributo="A">Lorem</h1>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, sit quod accusantium dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, sit quod accusantium dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
 </body>
 </html>
 <!--
+Parte 1
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +34,16 @@ div {
     color: red;
 } selecionando a filha direta do pai child selector
 
+Parte 2
+.pai h1+p {
+    color: red;
+} adjacent sibling selector, seleciona todo elemento que estiver diretamente depois do elemento que voce disser, "para o elemento da classe pai que estiver um p depois de um h1"
+.pai h1~p {
+    color: red;
+}general sibling selector, seleciona todos elementos depois de um elemento, pega todos os p depois do h1
+Tem como criar atributos, usando cochetes [] no style, ="A" tem como especificar o nosso atributo com um valor especifico dito no style
+usando o [] tambem tem como modificar atributos pré estabelecidos, adicionando mais coisas para ele fazer
+
 -->
 <!--
 
@@ -58,6 +56,43 @@ div {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus fugiat. Voluptatibus, adipisci deleniti, delectus nihil perferendis cupiditate quia enim eius voluptates quod laboriosam architecto debitis eligendi quo dolores hic.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus fugiat. Voluptatibus, adipisci deleniti, delectus nihil perferendis cupiditate quia enim eius voluptates quod laboriosam architecto debitis eligendi quo dolores hic.</p>
         </section>
+    </div>
+        <div class="pai">
+        Pai
+        <div class="filha outra qualquer">
+            Filha 1
+            <span>
+                <div class="filha outra qualquer">
+                    Filha da Filha
+                </div>
+            </span>
+        </div>
+        <div class="filha outra qualquer">
+            Filha 2
+            <div class="filha outra qualquer">
+                Filha da Filha
+            </div>
+        </div>
+    </div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="pai">
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
     </div>
 
 -->
