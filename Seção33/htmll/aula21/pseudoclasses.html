@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../assets/css/aula21.css">
 </head>
 <body>
+    <input type="text" disabled>
     <input type="checkbox" checked>
     <input type="checkbox">
     <h1 class="heading" meu-atributo="comecou valorrr">Lorem</h1>
@@ -21,5 +22,27 @@ transition: all 300ms ease-in-out diz que em todas transições ele quer que dem
 a:link {
     color: deeppink;
 } os links que eu nunca visitei tem essa cor
+a:visited {
+    color: firebrick;
+} os links que ja visitei tem essa cor
+a:hover {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+} quando eu passar o cursor, vai ter esse background, com essa cor, e nao vai ter nenhuma decoração de texto, que no caso seria o sublinhado
+a:hover {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+} quando voce fica segurando o link fica desse jeito
+input:focus {
+    box-shadow: 0 0 50px deeppink;
+    outline: none;
+    border: 1px solid black;
+} :foucs -> quando está clicado; box-shadow -> sombra da caixa 0 0 50px cor
+input:disabled {
+    background: rebeccapurple;
+    cursor: not-allowed;
+} :disable -> se refere a quando vai estar desabilitado, o que fazer; not-allowed -> cursos fica com o simbolo de bloquado
 
 -->
