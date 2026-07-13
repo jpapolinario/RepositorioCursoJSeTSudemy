@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="../../assets/css/aula21.css">
 </head>
 <body>
-    <input type="text" disabled>
-    <input type="checkbox" checked>
-    <input type="checkbox">
-    <h1 class="heading" meu-atributo="comecou valorrr">Lorem</h1>
-    <p class="p"><a href="#">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, <a href="nuncafuivisitado">sit quod accusantium</a> dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
-    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, sit quod accusantium dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
+    <input required> 
+    <input> 
+    <div class="pai">
+        <ul class="lista">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>tem 3</li>
+        </ul>
+    </div>
 </body>
 </html>
 <!--
@@ -43,6 +46,36 @@ input:focus {
 input:disabled {
     background: rebeccapurple;
     cursor: not-allowed;
-} :disable -> se refere a quando vai estar desabilitado, o que fazer; not-allowed -> cursos fica com o simbolo de bloquado
+} :disable -> se refere a quando vai estar desabilitado, o que fazer; not-allowed -> cursos fica com o simbolo de bloqueado
+input:enabled {
+    background: rebeccapurple;
+    cursor: not-allowed;
+} :enable -> se refere a quando vai estar habilitado, significa quando o input está ativo
+input:checked {
+    width: 50px;
+    height: 50px;
+} quando ele estiver checado ele aumenta de tamanho
+se voce fizer li*3 o vs code vai fazer 3 lis para voce 
+.pai .lista li:first-child {
+    background: red;
+} :first-child vai pegar somente o primeiro filho
+.pai .lista li:last-child {
+    background: red;
+} :last-child vai pegar somente o ultimo filho
+input:required {
+    background: red;
+} quando for requerido o background é red
+
+-->
+
+<!--
+
+    <input type="checkbox">
+    <p>Olá Mundo!</p>
+    <p>Olá Mundo!</p>
+    <p>Olá Mundo!</p>
+    <h1 class="heading">Lorem</h1>
+    <p class="p"><a href="#">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, <a href="nuncafuivisitado">sit quod accusantium</a> dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ducimus molestias aperiam quo magni facilis ipsum veritatis debitis, sit quod accusantium dolorem quam reprehenderit praesentium possimus atque minima aut dolores.</p>
 
 -->
