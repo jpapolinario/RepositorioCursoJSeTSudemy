@@ -1,0 +1,7 @@
+/*
+google fonts
+procure a fonte que quer
+entra nela
+seleciona a fonte 
+
+*/
